@@ -1,23 +1,27 @@
 /* Java program to print area & circumference of a circle, given the radius */
+import java.util.Scanner;
 
 public class CircleComputation {
     public static void main(String[] args) {
-        double radius, area, circumference;
-        final double PI = 3.14159265; // final to specify value cannot be changed
+        double radius, area, diameter, circumference;
+        Scanner in = new Scanner(System.in);
 
-        radius = 1.2;
+        // Prompt and read user's radius
+        System.out.print("Enter the radius: ");
+        radius = in.nextDouble();
 
         // Compute area
-        area = PI * radius * radius;
+        area = Math.PI * radius * radius;
+        // Compute diameter
+        diameter = 2.0 * radius;
         // Compute circumference
-        circumference = 2 * PI * radius;
+        circumference = 2.0 * Math.PI * radius;
 
         // Print results
-        System.out.println("The radius is ");
-        System.out.println(radius);
-        System.out.println("The area is ");
-        System.out.println(area);
-        System.out.println("The circumference is ");
-        System.out.println(circumference);
-    }
+        System.out.printf("Diameter is: %.2f%n", diameter);
+        System.out.printf("Circumference is: %.2f%n", circumference);
+        System.out.printf("Area is: %.2f%n", area);
+
+        in.close();
+;    }
 }

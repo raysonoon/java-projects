@@ -22,5 +22,8 @@ public class OddEven {
 
         // Print bye
         System.out.println("bye");
+
+        // Close the scanner
+        in.close();
     }
 }
