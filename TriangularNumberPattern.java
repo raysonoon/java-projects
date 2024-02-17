@@ -1,11 +1,11 @@
-/* Java program that prompts user for size of pattern (in int); and prints Box with Cross pattern */
+/* Java program that prompts user for size of pattern (in int); and prints triangular number pattern */
 
 import java.util.Scanner;
 
 /**
- * BoxCrossPattern     
+ * TriangularNumberPattern        
  */
-public class BoxCrossPattern {
+public class TriangularNumberPattern {
 
     public static void main(String[] args) {
 
@@ -22,10 +22,8 @@ public class BoxCrossPattern {
         // For loop to print pattern
         for (int row = 1; row <= size; row++) {
             for (int col = 1; col <= size; col++) {
-                if (row == 1 || row == size || col == 1 || col == size) {
-                    System.out.print("*");
-                } else if (row == col || row + col == size + 1) {
-                    System.out.print("+");
+                if (row <= col) {
+                    System.out.print(col - (row - 1));
                 } else
                     System.out.print(" ");
             }
