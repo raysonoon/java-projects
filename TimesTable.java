@@ -3,9 +3,9 @@
 import java.util.Scanner;
 
 /**
- * MultiplicationTable
+ * TimesTable
  */
-public class MultiplicationTable {
+public class TimesTable {
 
     public static void main(String[] args) {
         // Declare size & spacing variable
@@ -14,7 +14,7 @@ public class MultiplicationTable {
         Scanner in = new Scanner(System.in);
 
         // Prompt user for size variable
-        System.out.print("Enter the size: "); // No newline for prompting message
+        System.out.print("Enter the size of the table: "); // No newline for prompting message
         size = in.nextInt(); // Read next input as "int"
         in.close();
         

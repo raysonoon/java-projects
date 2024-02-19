@@ -22,13 +22,18 @@ public class HillPattern {
         for (int row = 1; row <= numRows; row++) {
 
             // Print left-hand spaces
-            for (int col = 1; col <= numRows - row; col++) {
+            for (int lcol = 1; lcol <= numRows - row; lcol++) {
                 System.out.print(" ");
             }
 
             // Print ^
             for (int arrow = 1; arrow <= 2*row - 1; arrow++) {
                 System.out.print("^");
+            }
+
+            // Print right=hand spaces
+            for (int rcol = 1; rcol <= numRows - row; rcol++) {
+                System.out.print(" ");
             }
             
             // Move cursor to next line
