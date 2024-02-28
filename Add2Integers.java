@@ -22,6 +22,7 @@ public class Add2Integers {  // Save as "Add2Integers.java"
 
       // Display result
       System.out.println("The sum is: " + sum);   // Print with newline
+      System.out.printf("Hi, My name is %d%n", sum);
       in.close();  // Close Scanner
    }
 }

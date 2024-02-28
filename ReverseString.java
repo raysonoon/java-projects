@@ -23,7 +23,7 @@ public class ReverseString {
 
         System.out.print("The reverse is: ");
         // For loop to reverse string
-        for (int charIdx = inStrLen - 1; charIdx >= 0; --charIdx) { // Process string from the right
+        for (int charIdx = inStrLen - 1; charIdx > 0; --charIdx) { // Process string from the right
             System.out.print(inStr.charAt(charIdx));
         }
         System.out.println();

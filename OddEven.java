@@ -10,20 +10,20 @@ public class OddEven {
         Scanner in = new Scanner(System.in); // Scan keyboard for input
 
         // Put up prompting messages and read inputs as "int"
-        System.out.print("Enter an integer: "); // No newline for prompting message
+        System.out.print("Enter a number: "); // No newline for prompting message
         numberIn = in.nextInt();
+        in.close();
 
         // Check odd/even and print result
-        if (numberIn % 2 == 0) {
-            System.out.println(numberIn + " is even");
+        if (isOdd(numberIn)) {
+            System.out.println(numberIn + " is an odd number");
         } else {
-            System.out.println(numberIn + " is odd");
+            System.out.println(numberIn + " is an even number");
         }
 
-        // Print bye
-        System.out.println("bye");
+    }
 
-        // Close the scanner
-        in.close();
+    public static boolean isOdd(int number) {
+        return (number % 2 != 0);
     }
 }
