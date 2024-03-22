@@ -8,7 +8,7 @@ public class MyComplex {
     // Declare private instance variables
     private double real, imag;
 
-    // Public constructors
+    // Public constructors --> initialise instance
     public MyComplex() {
         real = 0.0;
         imag = 0.0;
@@ -84,6 +84,7 @@ public class MyComplex {
     }
 
     public MyComplex addNew(MyComplex right) {
+        // Declare & construct MyComplex sum instance
         MyComplex sum = new MyComplex(this.real, this.imag);
         sum.real += right.real;
         sum.imag += right.imag;

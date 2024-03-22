@@ -29,6 +29,10 @@ public class Time {
     }
     /** Sets the second. No input validation */
     public void setSecond(int second) {
+      // Input validation
+      if (second < 0 || second > 59) {
+         throw new IllegalArgumentException("invalid second");
+      }
        this.second = second;
     }
     /** Sets the minute. No input validation */

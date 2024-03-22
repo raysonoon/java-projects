@@ -3,43 +3,50 @@
 /**
  * Rectangle
  */
-public class Rectangle {
+public class Rectangle extends Shape {
 
     // Declare private instance variables
-    private float length;
-    private float width;
+    private double length;
+    private double width;
 
     // Constructors
     // Rectangle with default length & width
     public Rectangle() {
-        length = 1.0f;
-        width = 1.0f;
+        length = 1.0;
+        width = 1.0;
     }
 
     // Rectangle with given length & width
-    public Rectangle(float l, float w) {
-        length = l;
+    public Rectangle(double w, double l) {
         width = w;
+        length = l;
+    }
+
+    // Rectangle with given length, width, string & color
+    public Rectangle(double w, double l, String color, boolean filled) {
+        super(color,filled);
+        width = w;
+        length = l;
     }
 
     // Public methods
     // Returns radius
-    public float getLength() {
+    public double getLength() {
         return length;
     }
 
     // Sets new length
-    public void setLength(float newLength) {
+    public void setLength(double newLength) {
         length = newLength;
     }
 
     // Returns width
-    public float getWidth() {
+    public double getWidth() {
         return width;
     }
 
     // Sets new width
-    public void setWidth(float newWidth) {
+    public void setWidth(double newWidth) {
         width = newWidth;
     }
 
@@ -55,6 +62,6 @@ public class Rectangle {
 
     // Returns String
     public String toString() {
-        return "Rectangle[length=" + length + ",width=" + width + "]";
+        return "Rectangle[" + super.toString() + ",width=" + width + ",length=" + length + "]";
     }
 }

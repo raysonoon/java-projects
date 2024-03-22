@@ -3,7 +3,7 @@
 /**
  * Circle
  */
-public class Circle {
+public class Circle  extends Shape {
 
     // Declare private instance variables
     private double radius;
@@ -16,6 +16,12 @@ public class Circle {
 
     // Circle with given radius
     public Circle(double r) {
+        radius = r;
+    }
+
+    // Circle with given radius, color & boolean filled
+    public Circle(double r, String color, boolean filled) {
+        super(color,filled);
         radius = r;
     }
 
@@ -36,12 +42,12 @@ public class Circle {
     }
 
     // Returns circumference
-    public double getCircumference() {
+    public double getPerimeter() {
         return 2 * Math.PI * radius;
     }
 
     // Returns string
     public String toString() {
-        return "Circle[radius=" + radius + "]";
+        return "Circle[" + super.toString() + ",radius=" + radius + "]";
     }
 }
