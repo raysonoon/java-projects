@@ -1,8 +1,8 @@
-/* Cat subclass of Mammal subclass */
+/* Cat subclass of Animal */
 /**
  * Cat
  */
-public class Cat extends Mammal {
+public class Cat extends Animal {
 
     // Public constructors
     public Cat(String name) {
@@ -14,8 +14,8 @@ public class Cat extends Mammal {
         System.out.println("Meow");
     }
 
-    // toString()
+    /*// toString()
     public String toString() {
         return "Cat[" + super.toString() + "]";
-    }
+    }*/
 }

@@ -3,7 +3,7 @@
 /**
  * Animal
  */
-public class Animal {
+abstract public class Animal {
 
     // Private instance variables
     private String name;
@@ -13,8 +13,11 @@ public class Animal {
         this.name = name;
     }
 
+    // Greets abstract method
+    abstract public void greets();
+
     // toString()
-    public String toString() {
+    /*public String toString() {
         return "Animal[name=\"" + name + "\"]";
-    }
+    }*/
 }

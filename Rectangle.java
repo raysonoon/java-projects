@@ -5,9 +5,9 @@
  */
 public class Rectangle extends Shape {
 
-    // Declare private instance variables
-    private double length;
-    private double width;
+    // Declare protected instance variables
+    protected double length;
+    protected double width;
 
     // Constructors
     // Rectangle with default length & width

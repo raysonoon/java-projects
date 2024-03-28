@@ -3,10 +3,10 @@
 /**
  * Shape
  */
-public class Shape {
+abstract public class Shape {
 
-    // Private instance variables
-    private String color;
+    // Protected instance variables
+    protected String color;
     private boolean filled;
 
     // Public constructors
@@ -36,6 +36,10 @@ public class Shape {
     public void setFilled(boolean filled) {
         this.filled = filled;
     }
+
+    // Abstract methods
+    abstract public double getArea();
+    abstract public double getPerimeter();
 
     public String toString() {
         return "Shape[color=" + color + ",filled=" + filled + "]";

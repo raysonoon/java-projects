@@ -1,8 +1,8 @@
-/* Dog subclass of Mammal subclass */
+/* Dog subclass of Animal */
 /**
  * Dog
  */
-public class Dog extends Mammal {
+public class Dog extends Animal {
 
     // Public constructors
     public Dog(String name) {
@@ -19,8 +19,8 @@ public class Dog extends Mammal {
         System.out.println("Woooof");
     }
 
-    // toString()
+    /*// toString()
     public String toString() {
         return "Dog[" + super.toString() + "]";
-    }
+    }*/
 }
