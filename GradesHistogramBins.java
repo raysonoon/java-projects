@@ -37,7 +37,7 @@ public class GradesHistogramBins {
                 ++bins[9];
             }
             else {
-                ++bins[grades[idx]/10];
+                ++bins[grades[idx]/10]; // 100 / 10 = 10; 99 / 10 = 9;
             }
         }
 

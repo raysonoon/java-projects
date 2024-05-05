@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 // Java program to calculate perimeter & area of rectangle based on user's length & width
 /**
- * RectangleComputation8
+ * RectangleComputation
  */
 public class RectangleComputation {
     public static void main(String[] args) {

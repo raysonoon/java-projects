@@ -46,7 +46,7 @@ public class GradesHistogramHorizontal {
             if (binIdx != 9) {
                 System.out.printf("%2d-%3d: ", binIdx*10, binIdx*10 + 9);
             } else {
-                System.out.printf("%2d-%3d: ", binIdx*10, binIdx*10 + 10);
+                System.out.printf("%2d-%3d: ", binIdx*10, binIdx*10 + 10); // 90 - 100
             }
             // For loop to print stars
             for (int stars = 0; stars < bins[binIdx]; stars++) {

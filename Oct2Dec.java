@@ -19,7 +19,7 @@ public class Oct2Dec {
 
         // Prompt and read user input as string
         System.out.print("Enter an octal string: ");
-        octStr = in.next();
+        octStr = in.nextLine();
         octStrLen = octStr.length();
         in.close(); // Close scanner
 
@@ -30,12 +30,18 @@ public class Oct2Dec {
             // 3 cases: '0', '1', others
             if (octChar == '0') {
                 // Do nothing
-            } else if (octChar > '7') {
+            } else if (octChar >= '0' && octChar <= '7') {
+                dec += (octChar - '0') * (int)Math.pow(8, exp);
+            } else {
+                System.err.println("Invalid octal string");
+                return;
+            }
+            /*} else if (octChar > '7') {
                 System.err.println("invalid octal string");
                 return;
             } else {
                 dec += (octChar - '0') * (int)Math.pow(8, exp); // 1 * 2^exp
-            }
+            }*/
         }
         System.out.println("The decimal equivalent is: " + dec);
     }
