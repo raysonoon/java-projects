@@ -32,6 +32,16 @@ public class AWTCounter extends Frame {
         // "btnCount" adds an instance of BtnCountListener when clicked
         // BtnCountListener provides ActionEvent handler called actionPerformed()
 
+        // Allocate an anonymous instance of an anonymous inner class
+        // that extends WindowAdapter
+        // "super" Frame adds the instance as WindowEvent listener
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent evt) {
+                System.exit(0);
+            }
+        });
+
         setTitle("AWT Counter"); // Frame sets title
         setSize(300,100); // Frame sets initial window size
         setVisible(true); // "super" Frame shows
