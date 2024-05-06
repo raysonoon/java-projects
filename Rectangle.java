@@ -51,16 +51,19 @@ public class Rectangle extends Shape {
     }
 
     // Returns area
+    @Override
     public double getArea() {
         return length * width;
     }
 
     // Returns perimeter
+    @Override
     public double getPerimeter() {
         return 2 * length + 2 * width;
     }
 
     // Returns String
+    @Override
     public String toString() {
         return "Rectangle[" + super.toString() + ",width=" + width + ",length=" + length + "]";
     }

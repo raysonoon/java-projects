@@ -16,18 +16,22 @@ public class MovablePoint implements Movable {
     }
 
     // Public methods
+    @Override
     public void moveUp() {
         y -= ySpeed;
     }
 
+    @Override
     public void moveDown() {
         y += ySpeed;
     }
 
+    @Override
     public void moveLeft() {
         x -= xSpeed;
     }
 
+    @Override
     public void moveRight() {
         x += xSpeed;
     }

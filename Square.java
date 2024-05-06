@@ -7,7 +7,7 @@ public class Square extends Rectangle {
 
     // Public constructors
     public Square() {
-        super();
+        super(); // Call super default constructor; square is a rectangle
     }
 
     public Square(double side) {
@@ -27,11 +27,13 @@ public class Square extends Rectangle {
         super.setWidth(side);
     }
 
+    @Override
     public void setWidth(double side) {
         super.setLength(side);
         super.setWidth(side);
     }
 
+    @Override
     public void setLength(double side) {
         super.setLength(side);
         super.setWidth(side);

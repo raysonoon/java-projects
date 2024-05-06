@@ -3,16 +3,16 @@
 /**
  * Circle
  */
-public class Circle implements GeometricObject {
+public class Circle extends Shape {
 
     // Declare protected instance variables
     protected double radius;
 
     // Constructors
-    /*// Circle with default radius & colour
+    // Circle with default radius & colour
     public Circle() {
         radius = 1.0;
-    }*/
+    }
 
     // Circle with given radius
     public Circle(double r) {
@@ -20,34 +20,36 @@ public class Circle implements GeometricObject {
     }
 
     // Circle with given radius, color & boolean filled
-    /*public Circle(double r, String color, boolean filled) {
+    public Circle(double r, String color, boolean filled) {
         super(color,filled);
         radius = r;
-    }*/
+    }
 
     // Public methods
     // Returns radius
-    /*public double getRadius() {
+    public double getRadius() {
         return radius;
     }
 
     // Returns void
     public void setRadius(double newRadius) {
         radius = newRadius;
-    }*/
+    }
 
     // Returns area
+    @Override
     public double getArea() {
         return Math.PI * radius * radius;
     }
 
     // Returns circumference
+    @Override
     public double getPerimeter() {
         return 2 * Math.PI * radius;
     }
 
     // Returns string
-    //@Override
+    @Override
     public String toString() {
         return "Circle[radius=" + radius + "]";
     }

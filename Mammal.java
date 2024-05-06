@@ -10,6 +10,12 @@ public class Mammal extends Animal {
         super(name);
     }
 
+    // Public methods
+    @Override
+    public void greets() {
+        System.out.println("I'm :)");
+    }
+
     // toString()
     public String toString() {
         return "Mammal[" + super.toString() + "]";
