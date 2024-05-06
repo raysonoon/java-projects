@@ -42,7 +42,7 @@ public class AWTAccumulator extends Frame {
         new AWTAccumulator();
     }
     
-    // Define inner class to handle input TextFieldchua
+    // Define inner class to handle input TextField
     // ActionEvent listener implements ActionListener interface
     private class TFInputListener implements ActionListener {
         @Override

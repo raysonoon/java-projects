@@ -40,7 +40,9 @@ public class AWTCounter extends Frame {
     // main() method
     public static void main(String[] args) {
         // Invoke constructor to setup GUI by allocating an instance
-        AWTCounter app = new AWTCounter();
+        //AWTCounter app = new AWTCounter();
+        // Anonymous AWTCounter instance
+        new AWTCounter();
     }
 
     // Define inner class to handle "Count" button-click
